@@ -65,7 +65,18 @@ echo "\n# User Defined Section \nsource \"\$HOME/.antigen/antigen.zsh\"" >> ~/.z
 touch ~/.antigenrc
 echo "antigen use oh-my-zsh" >> ~/.antigenrc
 echo "antigen bundle git" >> ~/.antigenrc
+echo "antigen bundle brew" >> ~/.antigenrc
+echo "antigen bundle sudo" >> ~/.antigenrc
+echo "antigen bundle jsontools" >> ~/.antigenrc
 echo "antigen bundle command-not-found" >> ~/.antigenrc
+echo "antigen bundle web-search" >> ~/.antigenrc
+echo "antigen bundle docker" >> ~/.antigenrc
+echo "antigen bundle kubectl" >> ~/.antigenrc
+echo "antigen bundle helm" >> ~/.antigenrc
+echo "antigen bundle terraform" >> ~/.antigenrc
+echo "antigen bundle golang" >> ~/.antigenrc
+echo "antigen bundle laravel" >> ~/.antigenrc
+echo "antigen bundle jira" >> ~/.antigenrc
 echo "antigen bundle zsh-users/zsh-syntax-highlighting" >> ~/.antigenrc
 echo "antigen bundle zsh-users/zsh-autosuggestions" >> ~/.antigenrc
 echo "antigen apply" >> ~/.antigenrc
