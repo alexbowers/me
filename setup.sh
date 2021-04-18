@@ -34,10 +34,12 @@ brew install tableplus
 brew install --cask docker
 brew install kubernetic
 brew install terraform
+brew install composer
+brew install npm
 
 # Languages
 brew install php@7.4 php@8.0
-brew install node npm
+brew install node
 
 # Microsoft Office
 brew install microsoft-outlook
