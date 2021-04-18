@@ -57,9 +57,18 @@ brew install font-inter
 
 # Terminal Improvements
 omz update
-brew install zsh-syntax-highlighting
-brew install zsh-autosuggestions
 plutil -replace AlternateMouseScroll -bool YES ~/Library/Preferences/com.googlecode.iterm2.plist
+mkdir -p ~/.antigen && curl -L git.io/antigen > ~/.antigen/antigen.zsh
+echo "\n# User Defined Section \nsource \"\$HOME/.antigen/antigen.zsh\"" >> ~/.zshrc
+touch ~/.antigenrc
+echo "antigen use oh-my-zsh" >> ~/.antigenrc
+echo "antigen bundle git" >> ~/.antigenrc
+echo "antigen bundle command-not-found" >> ~/.antigenrc
+echo "antigen bundle zsh-users/zsh-syntax-highlighting" >> ~/.antigenrc
+echo "antigen bundle zsh-users/zsh-autosuggestions" >> ~/.antigenrc
+echo "antigen apply" >> ~/.antigenrc
+echo "source \"\$HOME/.antigenrc\"" >> ~/.zshrc
+source ~/.zshrc
 
 ssh-keygen -t ed25519 -a 100 -N ""
 
