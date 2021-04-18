@@ -37,6 +37,7 @@ brew install terraform
 
 # Languages
 brew install php@7.4 php@8.0
+brew install node npm
 
 # Microsoft Office
 brew install microsoft-outlook
