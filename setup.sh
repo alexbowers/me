@@ -34,6 +34,9 @@ brew install tableplus
 brew install --cask docker
 brew install kubernetic
 
+# Languages
+brew install php@7.4 php@8.0
+
 # Microsoft Office
 brew install microsoft-outlook
 brew install microsoft-excel
@@ -44,6 +47,19 @@ brew install spotify
 
 # Writing
 brew install typora
+
+# Fonts
+brew tap homebrew/cask-fonts
+brew install font-fira-code
+brew install font-fira-mono
+brew install font-fira-sans
+brew install font-inter
+
+# Terminal Improvements
+omz update
+brew install zsh-syntax-highlighting
+brew install zsh-autosuggestions
+plutil -replace AlternateMouseScroll -bool YES ~/Library/Preferences/com.googlecode.iterm2.plist
 
 ssh-keygen -t ed25519 -a 100 -N ""
 
