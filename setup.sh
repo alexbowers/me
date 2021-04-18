@@ -33,6 +33,7 @@ brew install tower
 brew install tableplus
 brew install --cask docker
 brew install kubernetic
+brew install terraform
 
 # Languages
 brew install php@7.4 php@8.0
