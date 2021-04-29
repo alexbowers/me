@@ -59,6 +59,10 @@ brew install font-fira-mono
 brew install font-fira-sans
 brew install font-inter
 
+# Desktop Improvements
+defaults write com.apple.Dock appswitcher-all-displays -bool true # Show the cmd + tab switcher on all monitors
+killall Dock # Restart the dock for changes to take effect
+
 # Terminal Improvements
 omz update
 plutil -replace AlternateMouseScroll -bool YES ~/Library/Preferences/com.googlecode.iterm2.plist
