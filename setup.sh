@@ -35,11 +35,18 @@ brew install --cask docker
 brew install kubernetic
 brew install terraform
 brew install composer
-brew install npm
+brew install lens
+brew install pulumi
+brew install nvm
+
+mkdir ~/.nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # Languages
 brew install php@7.4 php@8.0
-brew install node
+nvm install stable
 
 # Microsoft Office
 brew install microsoft-outlook
