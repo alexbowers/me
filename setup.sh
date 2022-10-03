@@ -7,6 +7,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # CLI Utiltiies
 brew install htop
 brew install tree
+brew install watch
 
 # GUI Utilities
 brew install --cask there
